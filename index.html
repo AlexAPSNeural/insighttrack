@@ -1,168 +1,114 @@
-To create a modern and visually appealing landing page for InsightTrack, we'll focus on crafting a user-centric design that effectively communicates the primary value proposition: advanced customer behavior analytics. This will involve a clean layout, engaging typography, and a color palette that aligns with a professional and cutting-edge image.
-
-Here's a production-ready HTML/CSS template for the landing page:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="InsightTrack offers SMBs advanced customer behavior analytics to optimize sales strategies, reduce churn, and increase customer lifetime value.">
-    <title>InsightTrack - Advanced Customer Behavior Analytics</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <title>InsightTrack - AI-Powered Predictive Analytics</title>
     <style>
         body {
             margin: 0;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Arial', sans-serif;
             color: #333;
-            background-color: #f8f9fa;
         }
-
         header {
-            background-color: #007bff;
+            background-color: #005f73;
             color: #fff;
-            padding: 20px;
+            padding: 1rem;
             text-align: center;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
         }
-
-        .btn {
-            background-color: #28a745;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
         .hero {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            padding: 50px 20px;
-            background: url('https://source.unsplash.com/random/1600x900?technology,analytics') center/cover no-repeat;
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
             color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
         }
-
-        .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
-
         .hero p {
             font-size: 1.2rem;
-            max-width: 600px;
+            margin-bottom: 2rem;
         }
-
+        .hero button {
+            background-color: #0a9396;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            color: #fff;
+            cursor: pointer;
+        }
         .features {
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
-            padding: 40px 20px;
-            background-color: #fff;
+            gap: 2rem;
+            padding: 2rem 0;
         }
-
         .feature {
-            max-width: 300px;
+            flex: 1;
+            min-width: 300px;
+            background-color: #e9ecef;
+            padding: 1.5rem;
+            border-radius: 8px;
             text-align: center;
-            margin: 20px;
         }
-
         .feature h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
         }
-
-        .feature p {
-            font-size: 1rem;
-            color: #666;
-        }
-
         footer {
-            background-color: #343a40;
-            color: #fff;
+            background-color: #333;
+            color: #aaa;
             text-align: center;
-            padding: 20px;
-            position: relative;
+            padding: 1rem;
         }
-
-        footer a {
-            color: #28a745;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 1.8rem;
+        @media(max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
             }
-
             .hero p {
                 font-size: 1rem;
             }
-
             .features {
-                padding: 20px;
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
 </head>
-
 <body>
     <header>
         <h1>InsightTrack</h1>
     </header>
-
     <section class="hero">
-        <h2>Unlock The Power of Customer Analytics</h2>
-        <p>Transform your SMB with advanced customer behavior analytics to optimize sales strategies, reduce churn, and
-            boost customer lifetime value.</p>
-        <a href="#learn-more" class="btn">Learn More</a>
-    </section>
-
-    <section class="features" id="learn-more">
-        <div class="feature">
-            <h3>Advanced Insights</h3>
-            <p>Get deeper insights into customer behavior to tailor sales strategies effectively.</p>
-        </div>
-        <div class="feature">
-            <h3>Reduce Churn</h3>
-            <p>Use predictive analytics to identify patterns and reduce customer churn rates.</p>
-        </div>
-        <div class="feature">
-            <h3>Boost Lifetime Value</h3>
-            <p>Maximize customer value with strategies informed by comprehensive analytics.</p>
+        <div class="container">
+            <h1>Unlock the Power of Predictive Analytics</h1>
+            <p>Make informed decisions by accurately forecasting market trends, consumer behaviors, and operational outcomes.</p>
+            <button>Get Started</button>
         </div>
     </section>
-
+    <section class="features container">
+        <div class="feature">
+            <h3>AI-Powered Insights</h3>
+            <p>Utilize advanced AI algorithms to predict future trends and behaviors with high accuracy.</p>
+        </div>
+        <div class="feature">
+            <h3>Increase Revenue</h3>
+            <p>Identify opportunities and optimize strategies to maximize your business's potential revenue.</p>
+        </div>
+        <div class="feature">
+            <h3>Reduce Risk</h3>
+            <p>Understand potential market shifts and prepare your operations to minimize exposure to risks.</p>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2023 InsightTrack. All rights reserved. | <a href="/privacy-policy">Privacy Policy</a> | <a
-                href="/terms-of-service">Terms of Service</a></p>
+        <p>&copy; 2023 InsightTrack. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
-```
-
-### Key Features:
-
-- **Responsive Design**: The page adapts to different screen sizes, ensuring usability across devices.
-- **Hero Section**: A visually engaging introduction with a compelling headline and a call to action.
-- **Feature Highlights**: Three key benefits are presented to encourage visitors to learn more.
-- **Color Palette**: The use of blue and green conveys trust and growth, which aligns with the service's goals.
-- **Typography**: Roboto provides a modern and readable textual representation.
-
-You can further extend the landing page by integrating functionality such as contact forms, social media links, or dynamically loaded content using JavaScript if needed.
